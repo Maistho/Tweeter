@@ -7,7 +7,7 @@ var mongoserver = mongodb.MongoServer("localhost", 27017);
 var db_connector = mongodb.MongoClient("tweeter", 27017);
 
 
-db_connector.connect("mongodb://localhost:27017/tweeter". function(err, db){
+db_connector.connect("mongodb://localhost:27017/tweeter" function(err, db){
 	if(err) throw err;
 	else console.log("Connected to MongoDB.");
 }
